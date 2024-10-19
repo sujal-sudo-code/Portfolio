@@ -1,0 +1,166 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+    background-image: url('images/back2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    background-image: url('images/back1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 30px; 
+    font-size: 40px; 
+}
+
+.portfolio {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px; 
+}
+
+.photo-entry {
+    margin: 15px;
+    padding: 10px; 
+    background-color: #333;
+    border-radius: 5px;
+    width: 250px; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-entry img {
+    width: 100%;
+    border-radius: 5px; 
+}
+
+h2 {
+    margin: 10px 0 5px; 
+    font-size: 18px; 
+}
+
+p {
+    font-size: 14px;
+    color: #999; 
+}
+
+header p {
+    color: #f4f4f4; 
+    font-size: 20px;
+}
+
+.navbar {
+    overflow: hidden; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 8px 20px;
+    position: relative; 
+    z-index: 1; 
+}
+
+.logo a{
+    color: white; 
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px; 
+    padding: 15px; 
+    transition: color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #f4f4f4; 
+}
+
+.instagram-icon {
+    width: 24px; 
+    height: 24px; 
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 40px; 
+    text-align: center; 
+    font-family: Arial, sans-serif;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px; 
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe-form button {
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.subscribe-form button:hover {
+    background-color: #333; 
+}
+
+
+.social-icons img {
+    width: 30px; 
+    margin-top: 30px; 
+}
+
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.photo-entry img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.clickable {
+    transition: transform 0.3s ease; 
+    width: 250px;
+}
+
+.enlarged {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    z-index: 10; 
+}
