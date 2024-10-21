@@ -1,11 +1,9 @@
-/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: white;
-    background-image: url('images/back2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,11 +16,18 @@ body {
     color: white; 
     padding: 20px;
     text-align: center;
+    
 }
 
-header {
-    padding: 30px; 
+header 
+{
+    height: 480px;
     font-size: 40px; 
+}
+
+header h1
+{
+    padding-top: 75px;
 }
 
 .portfolio {
@@ -46,6 +51,7 @@ header {
     width: 100%;
     border-radius: 5px; 
 }
+
 
 h2 {
     margin: 10px 0 5px; 
@@ -107,34 +113,16 @@ header p {
 }
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #999;
     padding: 40px; 
     text-align: center; 
     font-family: Arial, sans-serif;
 }
 
-.subscribe-form input[type="email"] {
-    padding: 10px; 
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
+.mail{
+    font-family: sans-serif;
+    position: center;
 }
-
-.subscribe-form button {
-    padding: 10px 20px; 
-    background-color: #000; 
-    color: #fff; 
-    border: none; 
-    border-radius: 0 5px 5px 0; 
-    cursor: pointer; 
-    font-weight: bold; 
-}
-
-.subscribe-form button:hover {
-    background-color: #333; 
-}
-
 
 .social-icons img {
     width: 30px; 
@@ -145,7 +133,7 @@ footer {
 .copyright {
     margin-top: 30px;
     font-size: 14px;
-    color: #666;
+    color: white;
 }
 
 .photo-entry img {
@@ -160,7 +148,7 @@ footer {
 }
 
 .enlarged {
-    transform: scale(1.5);
+    transform: scale(1.8);
     transition: transform 0.3s ease;
     z-index: 10; 
 }
