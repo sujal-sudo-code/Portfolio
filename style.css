@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +17,7 @@ body {
     color: white; 
     padding: 20px;
     text-align: center;
+    padding-bottom: 50px;
     
 }
 
@@ -34,11 +36,11 @@ header h1
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px; 
+    margin: 25px; 
 }
 
 .photo-entry {
-    margin: 15px;
+    margin: 20px;
     padding: 10px; 
     background-color: #333;
     border-radius: 5px;
@@ -114,18 +116,16 @@ header p {
 
 footer {
     background-color: #999;
-    padding: 40px; 
+    padding: 60px; 
     text-align: center; 
     font-family: Arial, sans-serif;
 }
 
 .mail{
     font-family: sans-serif;
-    position: center;
 }
 
 .social-icons img {
-    width: 30px; 
     margin-top: 30px; 
 }
 
@@ -148,7 +148,45 @@ footer {
 }
 
 .enlarged {
-    transform: scale(1.8);
+    transform: scale(1.6);
     transition: transform 0.3s ease;
     z-index: 10; 
+}
+
+.content {
+    padding: 60px 20px; 
+    min-height: 2000px; 
+}
+
+.fade-section {
+    opacity: 0;
+    transition: opacity 01s ease;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content-item {
+    flex: 1;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0; 
+    transform: scale(0.8);
+    transition: opacity 3s ease, transform 3s ease; 
+}
+
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    .content-item {
+        margin: 10px 0;
+    }
 }
