@@ -107,8 +107,8 @@ header p {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     position: relative;
+    font-family: sans-serif;
 }
 
 .about-header h1 {
@@ -155,45 +155,43 @@ header p {
 }
 
 footer {
-    padding: 40px;
-    text-align: center;
+    background-color: #999;
+    padding: 40px; 
+    text-align: center; 
     font-family: Arial, sans-serif;
-    margin-top: 20px; 
 }
 
-.subscribe-form {
-    margin-bottom: 20px; 
-}
-
-.subscribe-form input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.subscribe-form button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.subscribe-form button:hover {
-    background-color: #333;
+.mail{
+    font-family: sans-serif;
+    position: center;
+    color: white;
 }
 
 .social-icons img {
-    width: 30px;
-    margin-top: 30px;
+    width: 30px; 
+    margin-top: 30px; 
 }
+
 
 .copyright {
     margin-top: 30px;
     font-size: 14px;
-    color: #666;
+    color: white;
+}
+
+.photo-entry img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+
+.clickable {
+    transition: transform 0.3s ease; 
+    width: 250px;
+}
+
+.enlarged {
+    transform: scale(1.8);
+    transition: transform 0.3s ease;
+    z-index: 10; 
 }
