@@ -1,4 +1,3 @@
-/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,7 +35,7 @@ header h1
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px; 
+    margin: 25px; 
 }
 
 .photo-entry {
@@ -50,6 +49,7 @@ header h1
 }
 
 .photo-entry img {
+    transition: transform 0.3s ease;
     width: 100%;
     border-radius: 5px; 
 }
@@ -151,6 +151,7 @@ footer {
     transform: scale(1.6);
     transition: transform 0.3s ease;
     z-index: 10; 
+    position: relative;
 }
 
 .content {
@@ -158,35 +159,3 @@ footer {
     min-height: 2000px; 
 }
 
-.fade-section {
-    opacity: 0;
-    transition: opacity 01s ease;
-}
-
-.content-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.content-item {
-    flex: 1;
-    background-color: lightgrey;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 5px;
-    opacity: 0; 
-    transform: scale(0.8);
-    transition: opacity 3s ease, transform 3s ease; 
-}
-
-@media (max-width: 768px) {
-    .content-row {
-        flex-direction: column;
-    }
-
-    .content-item {
-        margin: 10px 0;
-    }
-}
