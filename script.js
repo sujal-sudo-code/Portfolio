@@ -1,15 +1,29 @@
-document.addEventListener('click', function(event) {
-    const clickedImage = event.target.closest('.clickable');
+const images = document.querySelectorAll('.clickable'); 
+    let currentlyEnlarged = null; 
 
-    if (clickedImage) {
-        document.querySelectorAll('.clickable').forEach(img => {
-            img.classList.remove('enlarged');
+    images.forEach(image => {
+        image.addEventListener('click', function(event) {
+            if (currentlyEnlarged && currentlyEnlarged !== this) {
+                currentlyEnlarged.classList.remove('enlarged');
+            }
+            
+            if (this.classList.contains('enlarged')) {
+                this.classList.remove('enlarged');
+                currentlyEnlarged = null; 
+            } else {
+                this.classList.add('enlarged');
+                currentlyEnlarged = this; 
+            }
+            
+            event.stopPropagation();
         });
+    });
 
-        clickedImage.classList.add('enlarged');
-    } else {
-        document.querySelectorAll('.clickable').forEach(img => {
-            img.classList.remove('enlarged');
-        });
-    }
-});
+    document.addEventListener('click', function() {
+        if (currentlyEnlarged) {
+            currentlyEnlarged.classList.remove('enlarged');
+            currentlyEnlarged = null; 
+        }
+    });
+
+    
