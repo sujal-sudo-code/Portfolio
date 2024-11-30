@@ -169,10 +169,6 @@ header h1
     object-fit: cover; 
 }
 
-.fade {
-    animation: fade 2s ease-in-out;
-}
-
 @keyframes fade {
     from { opacity: 0.4; }
     to { opacity: 1; }
