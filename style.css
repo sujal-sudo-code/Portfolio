@@ -1,0 +1,112 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    margin-right: 900px;
+    padding-left: 50px;
+}
+
+.main-li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.main-li a.active {
+    text-decoration: none;
+    border-bottom: 2px solid black; 
+}
+
+.insta-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.image-container {
+    padding-top: 80px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.image-item {
+    text-align: center;
+    font-weight: 550;
+}
+
+.image-item img {
+    width: 450px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    transition: opacity 0.3s ease;
+}
+
+.image-text {
+    font-size: 20px;
+    margin-top: 10px; 
+}
+
+.image-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.image-item img:hover {
+    opacity: 0.8; 
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .logo {
+    width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  

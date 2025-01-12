@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    margin-right: 900px;
+    padding-left: 50px;
+}
+
+.main-li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.main-li a.active {
+    text-decoration: none;
+    border-bottom: 2px solid black; 
+}
+
+.insta-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.para {
+    padding-left: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 80%;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+.image-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.image-container img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    margin: 1%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }   
+}
+
+.image-animation {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+footer {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo {
+    width: 30px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
