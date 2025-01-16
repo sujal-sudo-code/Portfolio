@@ -77,6 +77,30 @@ body {
     animation-range: entry 0% cover 40%;
 }
 
+.next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next a {
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.left {
+    text-align: left;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.right {
+    text-align: right;
+    font-size: 35px;
+    margin-right: 50px;
+}
+
+
 footer {
     padding-top: 80px;
     display: flex;
