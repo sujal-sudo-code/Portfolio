@@ -1,13 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .navbar .nav-list {
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding-top: 25px;
+    z-index: 1;
 }
 
 .logo a {
@@ -51,6 +52,7 @@ body {
     flex-wrap: wrap;
     width: auto;
     min-height: 70vh;
+    position: relative;
 }
 
 .image-container img {
@@ -75,6 +77,18 @@ body {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.next{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 35px;
+}
+
+.next a{
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer {
