@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 0;
     padding: 0;
 }
@@ -35,106 +35,78 @@ body {
     height: 25px;
 }
 
-.para {
-    padding-left: 150px;
-    text-align: center;
-    margin-bottom: 100px;
-    width: 80%;
-    font-size: 30px;
-    margin-top: 200px;
-}
-
 .image-container {
-    justify-content: center;
     padding-top: 80px;
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
-    width: auto;
-    min-height: 70vh;
+    margin-top: 20px;
+    justify-content: center;
 }
 
-.image-container img {
-    width: 35%;
-    height: 35%;
-    object-fit: cover;
-    margin: 5%;
+.image-item {
+    text-align: center;
+    font-weight: 550;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }   
+.image-item img {
+    width: 450px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    transition: opacity 0.3s ease;
 }
 
-.image-animation {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+.image-text {
+    font-size: 20px;
+    margin-top: 10px; 
 }
 
-.next {
-    display: flex;
-    justify-content: space-between;
-}
-
-.next a {
+.image-item a{
     text-decoration: none;
     color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.left {
-    text-align: left;
-    font-size: 35px;
-    margin-left: 50px;
-}
-
-.right {
-    text-align: right;
-    font-size: 35px;
-    margin-right: 50px;
+.image-item img:hover {
+    opacity: 0.8; 
 }
 
 footer {
     padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     text-align: center;
-    padding-bottom: 80px;
-}
-
-.footer-content {
+  }
+  
+  .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-footer .logo {
+  }
+  
+  footer .logo {
     width: 30px;
     height: auto;
     margin-bottom: 20px;
-}
-
-.footer-links {
+  }
+  
+  .footer-links {
     display: flex;
     gap: 20px;
-}
-
-.footer-link {
+  }
+  
+  .footer-link {
     font-size: 20px;
     color: #333;
     text-decoration: none;
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
-}
-
-.footer-link:hover {
+  }
+  
+  .footer-link:hover {
     text-decoration: underline;
-}
+  }
+  
