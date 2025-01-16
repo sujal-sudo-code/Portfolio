@@ -45,19 +45,19 @@ body {
 }
 
 .image-container {
-    padding-top: 50px;
+    justify-content: center;
+    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    width: auto;
     min-height: 70vh;
 }
 
 .image-container img {
-    width: 48%;
-    height: auto;
+    width: 35%;
+    height: 35%;
     object-fit: cover;
-    margin: 1%;
+    margin: 5%;
 }
 
 @keyframes appear {
@@ -75,6 +75,29 @@ body {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next a {
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.left {
+    text-align: left;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.right {
+    text-align: right;
+    font-size: 35px;
+    margin-right: 50px;
 }
 
 footer {
